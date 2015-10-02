@@ -1,0 +1,17 @@
+
+<table border="1">
+  <tr>
+  	<th>Image</th>
+  	<th>Name</th>
+  	<th>Description</th>
+  </tr>
+  <% @recipes.each do |recipe| %>
+    <tr class=<%= cycle('even', 'odd') %>>
+      <td><%= image_tag(recipe["image_url"])%></td>
+      <td><%= recipe["title"] %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+<p>Powered By Food2Fork.com</p>
