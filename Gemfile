@@ -25,3 +25,7 @@ group :development, :test do
 end
 
 gem 'httparty'
+
+
+gem 'tzinfo-data'
+gem 'tzinfo'
